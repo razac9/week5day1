@@ -8,6 +8,7 @@ const dobItem = document.getElementById("dob");
 const addressItem = document.getElementById("address");
 const phoneItem = document.getElementById("phone");
 const emailItem = document.getElementById("email");
+const indicationItem = document.getElementById("personIndicator");
 
 console.log(data);
 
@@ -42,6 +43,10 @@ function changeIndividual() {//Name
     //Picture
     let personPicture = data.results[individualNum].picture.large;
     picItem.innerHTML = `<img src = ${personPicture}>`
+
+    //Person Indicator Change
+    indicationItem.innerHTML = `Person #${individualNum + 1}`
+
 }
 
 changeBtn.addEventListener("click", event => {

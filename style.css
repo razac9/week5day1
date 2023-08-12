@@ -9,6 +9,10 @@
     padding: 15px;
 }
 
+#personIndicator{
+    margin-top: 10px;
+    text-align: center;
+}
 
 #pic{
     text-align: center;
